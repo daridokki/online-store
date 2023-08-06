@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  background-color: #dad7cd !important;
+}
+a {
+  text-decoration: none;
+}
+header {
+  z-index: 30;
+  background: linear-gradient(90deg, #588157, #3a5a40);
+  font-family: Hauss, sans-serif;
+  border-radius: 0 0 15px 15px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 24px 32px;
+  flex-wrap: wrap;
+}
+header .logo {
+  margin: 0 32px 0 16px;
+}
+header .logoImg {
+  opacity: 0.6;
+  transition: 0.25s ease;
+}
+header .logoImg:hover {
+  opacity: 1;
+  transition: 0.25s ease;
+}
+header form {
+  min-width: 560px;
+  margin: 0;
+  height: 56px;
+  border: 0;
+  background-color: rgba(240, 240, 243, 0.3);
+  border-radius: 28px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  transition: color 0.25s ease, background-color 0.25s ease,
+    background-image 0.6s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  @media (max-width: 1024px) {
+    order: 2;
+    width: 100%;
+    flex: 1 0 auto;
+    margin-top: 11px;
+  }
+}
+header form:hover {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+header form input:focus {
+  background-color: #fff;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  color: #000;
+  cursor: text;
+  padding-left: 47px;
+}
+header form button:focus {
+  background-color: #fff;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  color: #000;
+  cursor: text;
+  padding-left: 47px;
+}
+header form input {
+  padding: 0 38px 0px 47px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+}
+header form button {
+  padding: 0 20px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  border-radius: 28px;
+}
+header form input::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+header .headerMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 40px;
+  @media (max-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+header .headerMenu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+header .headerMenu a p {
+  margin-top: 5px;
+  display: block;
+  font-size: 14px;
+  line-height: 1.21429;
+  color: hsla(0, 0%, 100%, 0.6);
+  transition: color 0.25s ease;
+}
+header .headerMenu a:hover p {
+  color: #fff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (max-width: 1300px) {
+    padding: 0 2vw;
+  }
+}
+*,
+label,
+::placeholder {
+  font-family: Roboto !important;
+}
+.addButton {
+  margin: 20px 0 !important;
+}
+.mantine-Text-root {
+  font-size: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.productButton {
+  background: linear-gradient(90deg, #588157, #3a5a40);
+}
+.productCard {
+  height: 100%;
+  padding: 10px 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productImage {
+  padding: 10px;
+  width: fit-content;
+  object-fit: cover;
+}
+.productButton {
+  margin: 0;
+  width: 100% !important;
+}
+.productGroup {
+  gap: 8px;
+  margin: 8px 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  align-items: center;
+}
+.buttons button,
+.buttons a {
+  padding: 12px 25px;
+  font-size: 17px;
+  height: max-content;
+  width: max-content;
+}
+.mantine-Button-root {
+  width: max-content;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #588157, #3a5a40);
+  font-weight: 500 !important;
+  margin-top: 0px;
+}
+.badges {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.badgesUnique {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.mantine-Badge-root {
+  color: #ffffff;
+  background-color: #3a5a40;
+  font-weight: 500;
+  padding: 1px 7px;
+  font-size: 9px;
+  margin: 5px 0 0;
+  height: max-content;
+  width: max-content;
+}
+.productUniqueImage {
+  width: 100%;
+}
+.formInput {
+  height: 56px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  color: #000000;
+  font-size: 22px;
+  outline: none;
+  transition: color 0.25s ease, background-color 0.25s ease,
+    background-image 0.6s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  padding-right: 5px;
+}
+.mantine-Input-input,
+.mantine-NumberInput-wrapper {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+}
+.mantine-NumberInput-root {
+  margin-top: 20px;
+}
+.mantine-Checkbox-label {
+  font-size: 18px;
+}
+.productDescription {
+  font-size: 20px;
+}
